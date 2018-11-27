@@ -52,20 +52,20 @@
                 }
             },
             "patientContext": {
-        		"programAttributes": [
-            		"Id_Number",
-            		"Doctor",
-            		"Stage"
-        		],
-        		"personAttributes": [
-            		"class",
-            		"caste"
-        		],
-        		"additionalPatientIdentifiers": [
-           			"National ID"
-       		],
-        		"preferredIdentifier": "Id_Number"
-    	},
+                "programAttributes": [
+                    "Id_Number",
+                    "Doctor",
+                    "Stage"
+                ],
+                "personAttributes": [
+                    "class",
+                    "caste"
+                ],
+                "additionalPatientIdentifiers": [
+                    "National ID"
+            ],
+                "preferredIdentifier": "Id_Number"
+        },
         "obsIgnoreList": [
             "REGISTRATION FEES",
             "COMMENTS",
@@ -87,6 +87,20 @@
                 "nonCodedConceptName":"Non-Coded Chief Complaint",
                 "durationRequired": false,
                 "allowAddMore": true
+            },
+            "Diagnosis" : {
+                "required": true,
+                "autocomplete": true
+
+            },
+            "Anaesthesia type" : {
+                "required" : true,
+                "multiSelect": true
+
+            },
+            "ASA Grading": {
+                "stepper": true
+
             },
             "Tuberculosis, Adverse Effects" :{
                 "multiSelect" : true,

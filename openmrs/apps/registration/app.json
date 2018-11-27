@@ -27,17 +27,22 @@
                         "RationCard",
                         "familyIncome",
                         "debt",
-                        "cluster"
+                        "cluster",
+                        "Religion",
+                        "phoneNumber",
+                        "Occupation2"
                     ]
                 },
                 "hidden": {
                     "attributes": [
-                        "primaryContact"
+                        "primaryContact","Religion"
                     ]
                 },
                 "defaults":  {
                     "class": "General",
-                    "landHolding": 2
+                    "caste": "Caste",
+                    "education": "Uneducated",
+                    "landHolding": 3
                 }
             },
             "addressHierarchy": {
@@ -111,7 +116,13 @@
                     "label": "रुग्णाचे नाव",
                     "placeholder": "रुग्णाचे नाव",
                     "fields": ["givenNameLocal", "middleNameLocal", "familyNameLocal"]
+                },
+                "customAttributes": {
+                    "label": "Phone Number",
+                    "placeholder": "Enter phone number",
+                    "fields": ["phoneNumber"]
                 }
+
             }
         }
 }
